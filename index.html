@@ -6,38 +6,58 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href='//fonts.googleapis.com/css?family=Italiana|Raleway:400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Italiana|Raleway:200,300,400,500,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<nav class="top-navigation">
-		<ul>
-			<li class="active">About Me</li>
-			<li>Projects</li>
-			<li>Contact Me</li>
-		</ul>
+		<div class="content">
+			<a href="#top"><img class="logo" src="images/logo.png" alt="Logo" style="height: 4em;" /></a>
+			<ul class="links">
+				<li class="active"><a href="#aboutMe">About Me</a></li>
+				<li><a href="#myProjects">Projects</a></li>
+				<li><a href="#contactMe">Contact Me</a></li>
+			</ul>
+			
+		</div>
 	</nav>
 	<section class="introduction">
-		<h1>Greg Van Buren</h1>
-		<p>Aspiring Web Developer</p>
+		<div class="content">
+			<h1>Greg Van Buren</h1>
+			<h3>Aspiring Web Developer</h3>
+		</div>
 	</section>
 	<section class="about">
-		<h1>Hello.</h1>
-		<p>I'm Greg. I'm an Inventory Analyst and an aspriing Web Developer based in San Francisco, CA.</p>
+		<span class="anchor" id="aboutMe"></span>
+		<div class="content">
+			<h1>Hello.</h1>
+			<p>I'm Greg. I'm an Inventory Planning Analyst and aspiring Web Developer based in San Francisco, California. I like building tools that increase efficiency and improve an overall process.</p>
+		</div>
 	</section>
 	<section class="projects">
-		<h1></h1>
-		<div class="showcase">
-			<ul>
-				<li></li>
-				<li></li>
-			</ul>
+		<span class="anchor" id="myProjects"></span>
+		<hr class="pageBreak" />
+		<div class="content">
+			<h1>Here are some of my latest projects.</h1>
+			<div class="showCase">
+				<ul>
+					<li><img src="images/nyt-edit.png" style="width: 250px; height: 250px;"/></li>
+					<li><img src="images/karma-clone.png" style="width: 250px; height: 250px;"/></li>
+				</ul>
+			</div>
 		</div>
 	</section>
 	<footer class="social">
-		<p></p>
-		<i></i>
-		<i></i>
-		<i></i>
-	</footer>
+		<span class="anchor" id="contactMe"></span>
+		<div class="content">
+		<hr class="pageBreak" />
+			<p>You can find me and more information about me at the links below.</p>
+			<ul class="socialLinks">
+				<li><a href="http://github.com/gvanburen" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+				<li><a href="https://twitter.com/gvanburen" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li><a href="http://www.linkedin.com/in/gregvanburen" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+			</ul>
+		</div>
+	</footer>	
+		
 </body>
 </html>

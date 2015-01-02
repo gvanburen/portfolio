@@ -1,3 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.content {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	-webkit-font-smoothing: antialiased;
+	padding: 0 2em;
+}
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -6,7 +22,7 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, em, hr, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
@@ -45,4 +61,179 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* Start Custom Styles */
+.top-navigation {
+	height: 4em;
+	background-color: #E7E7E7;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+	overflow: hidden;
+}
+
+.content .logo {
+	height: 4em;
+	width: 4em;
+}
+
+.content > .links {
+	float: right;
+	margin-top: 1.5em;
+	color: #423C3C;
+}
+
+.content .links li {
+	display: inline-block;
+	margin-left: 1.5em;
+}
+
+.content .links .active {
+	font-weight: 400;
+}
+
+.content .links a {
+	text-decoration: none;
+	color: #423C3C;
+}
+
+.content .links a:visited {
+	color: #333333;
+}
+
+.content .links a:hover {
+	color: #000000;
+}
+
+.introduction {
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+.introduction .content h1,
+.introduction .content h3 {
+	text-align: center;
+}
+
+.introduction .content h1 {
+	font-weight: 500;
+	font-size: 2em;
+	text-align: center;
+	padding: 7em 0 0 0;
+	margin-bottom: .3em;
+}
+
+@media only screen and (max-width: 450px) {
+	.introduction {
+		height: 300px;
+	}
+	.introduction .content > h1 {
+		padding: 9em 0 0 0;
+		font-size: 1em;
+		font-weight: 500;
+	}
+}
+
+.anchor {
+	display: block;
+	height: 70px;
+	margin-top: -70px;
+	visibility: hidden;
+}
+
+.about {
+	background-color: #E7E7E7;
+	height: 18em;
+}
+
+.about .content {
+	padding: .5em 2em 2em 2em;
+}
+
+.content h1 {
+	text-align: center;
+	margin-bottom: .7em;
+  	letter-spacing: .05em;
+	font-size: 2.2em;
+}
+
+.about .content p {
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+.pageBreak {
+	border-top: 1px solid #333333;
+}
+
+.projects {
+	background-color: #E7E7E7; 
+	padding: 2em 0;
+	overflow: hidden;
+}
+
+.projects .content {
+	text-align: center;
+	padding: 2em 0;
+}
+
+.projects .content p 
+.showCase {
+	padding: 2em 0;
+}
+
+.showCase ul {
+	display: flex;/*inline-block*/
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 auto;
+}
+.showCase li {
+	width: 33.33%;
+}
+
+@media only screen and (max-width: 800px) {
+	.showCase li {
+		width: 100%;
+	}
+}
+
+.social {
+	background-color: #E7E7E7;
+	height: 15em;
+	overflow: hidden;
+}
+
+.social .content {
+	text-align: center;
+	padding: 0 2em;
+}
+
+.social .content p {
+	margin-top: 3em;
+
+}
+
+.socialLinks {
+	padding: 2em 0;
+}
+.socialLinks > li {
+  display:inline-block;
+  margin: 1em .8em;
+}
+
+.socialLinks a {
+	color: #423C3C;
+}
+
+.socialLinks a:visited {
+	color: #423C3C;
+}
+
+.socialLinks a:hover {
+	color: #000000;
 }
