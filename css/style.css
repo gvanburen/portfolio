@@ -13,7 +13,7 @@ html {
 	padding: 0 2em;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 470px) {
 	.content {
 		font-size: .8em;
 	}
@@ -93,10 +93,7 @@ table {
 .content .links li {
 	display: inline-block;
 	margin-left: 1.5em;
-}
-
-.content .links .active {
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .content .links a {
@@ -136,7 +133,7 @@ table {
 	font-size: 1.3em;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 470px) {
 	.introduction {
 		height: 300px;
 	}
@@ -197,6 +194,10 @@ table {
 .projects .content {
 	text-align: center;
 	padding: 2em 2em;
+}
+
+.projects .content h1 {
+	padding-top: 2em;
 }
 
 .projectImage {
