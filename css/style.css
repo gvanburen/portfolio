@@ -13,6 +13,12 @@ html {
 	padding: 0 2em;
 }
 
+@media only screen and (max-width: 450px) {
+	.content {
+		font-size: .8em;
+	}
+}
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -119,11 +125,15 @@ table {
 }
 
 .introduction .content h1 {
-	font-weight: 500;
-	font-size: 2em;
+	font-weight: 400;
+	font-size: 2.5em;
 	text-align: center;
-	padding: 7em 0 0 0;
+	padding: 5em 0 0 0;
 	margin-bottom: .3em;
+}
+
+.introduction .content h3 {
+	font-size: 1.3em;
 }
 
 @media only screen and (max-width: 450px) {
@@ -131,9 +141,17 @@ table {
 		height: 300px;
 	}
 	.introduction .content > h1 {
-		padding: 9em 0 0 0;
-		font-size: 1em;
-		font-weight: 500;
+		padding: 5em 0 0 0;
+		font-size: 1.8em;
+		font-weight: 400;
+	}
+
+	.introduction .content > h3 {
+		font-size: .8em;
+	}
+
+	.about .content h1 {
+		font-size: 1.8em;
 	}
 }
 
@@ -178,28 +196,29 @@ table {
 
 .projects .content {
 	text-align: center;
-	padding: 2em 0;
+	padding: 2em 2em;
 }
 
-.projects .content p 
-.showCase {
-	padding: 2em 0;
+.projectImage {
+	margin: 3em 0 2em 0;
+	padding: 1em 0;
 }
 
-.showCase ul {
-	display: flex;/*inline-block*/
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 0 auto;
-}
-.showCase li {
-	width: 33.33%;
+.projectImage li {
+	width: 33.3333333%;
+	display: inline-block;
+	margin: 1em;
 }
 
-@media only screen and (max-width: 800px) {
-	.showCase li {
-		width: 100%;
+@media only screen and (max-width: 850px) {
+	.projectImage li {
+		width: 80%;
 	}
+}
+.projectImage img {
+	max-height: 250px;
+	max-width: 250px;
+	overflow: hidden;
 }
 
 .social {
@@ -215,12 +234,13 @@ table {
 
 .social .content p {
 	margin-top: 3em;
-
+	font-size: 1.2em;
 }
 
 .socialLinks {
 	padding: 2em 0;
 }
+
 .socialLinks > li {
   display:inline-block;
   margin: 1em .8em;
